@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- Mobile (default to sm) -->
+        <div class="d-block d-md-none">
+            <div class="bg-primary  p-3 text-center">HEADER</div>
+            <div class="bg-danger  p-3 text-center">MENU</div>
+            <div class="bg-primary  p-4 text-center">HERO</div>
+            <div class="bg-secondary  p-4 text-center">MAIN</div>
+            <div class="bg-warning p-3 text-center">BANNER</div>
+            <div class="bg-success  p-3 text-center">EXTRA</div>
+            <div class="bg-info p-3 text-center">IMAGE</div>
+        </div>
+
+        <!-- Tablet (md to xl) -->
+        <div class="d-none d-md-block d-xl-none">
+            <div class="bg-primary  p-3 text-center">HEADER</div>
+            <div class="bg-secondary  p-4 text-center">HERO</div>
+            <div class="row g-0">
+                <div class="col-2">
+                    <div class="bg-danger  p-4 h-100 text-center">MENU</div>
+                </div>
+                <div class="col-10">
+                    <div class="bg-primary  p-5 h-80 text-center">MAIN</div>
+                    <div class="bg-warning p-3 text-center">BANNER</div>
+                    <div class="row g-0">
+                        <div class="col-8">
+                            <div class="bg-success  p-3 text-center">EXTRA</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="bg-info  p-3 text-center">IMAGE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop (xl and +) -->
+
+        <div class="d-none d-xl-block">
+            <div class="row g-0">
+                <div class="col-3 bg-info">
+                    <div class="text-center">HEADER</div>
+                </div>
+                <div class="col-9 bg-danger">
+                    <div class="text-center">MENU</div>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="bg-primary p-5 text-center">HERO</div>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-6">
+                    <div class="text-center bg-secondary h-100 p-3">MAIN</div>
+                </div>
+                <div class="col-6">
+                    <div class="row g-0">
+                        <div class="col-6">
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center bg-info p-3">IMAGE</div>
+                        </div>
+                        <div class="col-6">
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center bg-success p-3">EXTRA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-12 bg-warning">
+                    <div class="text-center">BANNER</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
